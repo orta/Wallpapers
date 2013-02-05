@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Space Wallpapers' target in the 'Space Wallpapers' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
