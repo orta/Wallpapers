@@ -11,5 +11,8 @@
 @interface ORAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet NSProgressIndicator *networkProgress;
+
++ (void)setNetworkActivity:(BOOL)activity;
 
 @end

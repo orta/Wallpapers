@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47BBD7A85FD14A1AB5480ADF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B645679D3134D9D8E1E96FF /* libPods.a */; };
+		6034B1501747C57400F8D569 /* ORRedditSources.m in Sources */ = {isa = PBXBuildFile; fileRef = 6034B14F1747C57400F8D569 /* ORRedditSources.m */; };
+		6034B1531747CEE000F8D569 /* NSString+StringBetweenStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6034B1521747CEE000F8D569 /* NSString+StringBetweenStrings.m */; };
 		6041666116C0A3D600CFBD2F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6041666016C0A3D600CFBD2F /* Cocoa.framework */; };
 		6041666B16C0A3D600CFBD2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6041666916C0A3D600CFBD2F /* InfoPlist.strings */; };
 		6041666D16C0A3D600CFBD2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6041666C16C0A3D600CFBD2F /* main.m */; };
@@ -17,6 +20,11 @@
 		6041668016C0A3D600CFBD2F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6041666016C0A3D600CFBD2F /* Cocoa.framework */; };
 		6041668816C0A3D600CFBD2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6041668616C0A3D600CFBD2F /* InfoPlist.strings */; };
 		6041668B16C0A3D600CFBD2F /* Space_WallpapersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6041668A16C0A3D600CFBD2F /* Space_WallpapersTests.m */; };
+		6041669616C0A52700CFBD2F /* ORRedditImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6041669516C0A52700CFBD2F /* ORRedditImageController.m */; };
+		6041669C16C0A67800CFBD2F /* ORAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6041669B16C0A67800CFBD2F /* ORAppViewController.m */; };
+		6041669F16C0A6AF00CFBD2F /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6041669E16C0A6AE00CFBD2F /* Image.m */; };
+		604166A216C0A7EE00CFBD2F /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604166A016C0A7EE00CFBD2F /* Quartz.framework */; };
+		604166A316C0A7EE00CFBD2F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604166A116C0A7EE00CFBD2F /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6041665D16C0A3D600CFBD2F /* Space Wallpapers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Wallpapers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		262341C4A1244E268EEA7A67 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		4B645679D3134D9D8E1E96FF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6034B14E1747C57400F8D569 /* ORRedditSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORRedditSources.h; sourceTree = "<group>"; };
+		6034B14F1747C57400F8D569 /* ORRedditSources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORRedditSources.m; sourceTree = "<group>"; };
+		6034B1511747CEE000F8D569 /* NSString+StringBetweenStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringBetweenStrings.h"; sourceTree = "<group>"; };
+		6034B1521747CEE000F8D569 /* NSString+StringBetweenStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringBetweenStrings.m"; sourceTree = "<group>"; };
+		6041665D16C0A3D600CFBD2F /* Space Wallpapers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Space Wallpapers.app"; path = Wallpapers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6041666016C0A3D600CFBD2F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6041666316C0A3D600CFBD2F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		6041666416C0A3D600CFBD2F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -49,6 +63,14 @@
 		6041668716C0A3D600CFBD2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6041668916C0A3D600CFBD2F /* Space_WallpapersTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Space_WallpapersTests.h; sourceTree = "<group>"; };
 		6041668A16C0A3D600CFBD2F /* Space_WallpapersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Space_WallpapersTests.m; sourceTree = "<group>"; };
+		6041669416C0A52700CFBD2F /* ORRedditImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORRedditImageController.h; sourceTree = "<group>"; };
+		6041669516C0A52700CFBD2F /* ORRedditImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORRedditImageController.m; sourceTree = "<group>"; };
+		6041669A16C0A67700CFBD2F /* ORAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORAppViewController.h; sourceTree = "<group>"; };
+		6041669B16C0A67800CFBD2F /* ORAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORAppViewController.m; sourceTree = "<group>"; };
+		6041669D16C0A6AE00CFBD2F /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		6041669E16C0A6AE00CFBD2F /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		604166A016C0A7EE00CFBD2F /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		604166A116C0A7EE00CFBD2F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604166A216C0A7EE00CFBD2F /* Quartz.framework in Frameworks */,
+				604166A316C0A7EE00CFBD2F /* QuartzCore.framework in Frameworks */,
 				6041666116C0A3D600CFBD2F /* Cocoa.framework in Frameworks */,
+				47BBD7A85FD14A1AB5480ADF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +104,7 @@
 				6041668316C0A3D600CFBD2F /* Space WallpapersTests */,
 				6041665F16C0A3D600CFBD2F /* Frameworks */,
 				6041665E16C0A3D600CFBD2F /* Products */,
+				262341C4A1244E268EEA7A67 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,9 +120,12 @@
 		6041665F16C0A3D600CFBD2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				604166A016C0A7EE00CFBD2F /* Quartz.framework */,
+				604166A116C0A7EE00CFBD2F /* QuartzCore.framework */,
 				6041666016C0A3D600CFBD2F /* Cocoa.framework */,
 				6041667E16C0A3D600CFBD2F /* SenTestingKit.framework */,
 				6041666216C0A3D600CFBD2F /* Other Frameworks */,
+				4B645679D3134D9D8E1E96FF /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +143,16 @@
 		6041666616C0A3D600CFBD2F /* Space Wallpapers */ = {
 			isa = PBXGroup;
 			children = (
+				6041669A16C0A67700CFBD2F /* ORAppViewController.h */,
+				6041669B16C0A67800CFBD2F /* ORAppViewController.m */,
+				6034B14E1747C57400F8D569 /* ORRedditSources.h */,
+				6034B14F1747C57400F8D569 /* ORRedditSources.m */,
+				6034B1511747CEE000F8D569 /* NSString+StringBetweenStrings.h */,
+				6034B1521747CEE000F8D569 /* NSString+StringBetweenStrings.m */,
+				6041669D16C0A6AE00CFBD2F /* Image.h */,
+				6041669E16C0A6AE00CFBD2F /* Image.m */,
+				6041669416C0A52700CFBD2F /* ORRedditImageController.h */,
+				6041669516C0A52700CFBD2F /* ORRedditImageController.m */,
 				6041667216C0A3D600CFBD2F /* ORAppDelegate.h */,
 				6041667316C0A3D600CFBD2F /* ORAppDelegate.m */,
 				6041667516C0A3D600CFBD2F /* MainMenu.xib */,
@@ -156,19 +195,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6041665C16C0A3D600CFBD2F /* Space Wallpapers */ = {
+		6041665C16C0A3D600CFBD2F /* Wallpapers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6041668E16C0A3D600CFBD2F /* Build configuration list for PBXNativeTarget "Space Wallpapers" */;
+			buildConfigurationList = 6041668E16C0A3D600CFBD2F /* Build configuration list for PBXNativeTarget "Wallpapers" */;
 			buildPhases = (
 				6041665916C0A3D600CFBD2F /* Sources */,
 				6041665A16C0A3D600CFBD2F /* Frameworks */,
 				6041665B16C0A3D600CFBD2F /* Resources */,
+				4E4FAF22B5544685801C3441 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Space Wallpapers";
+			name = Wallpapers;
 			productName = "Space Wallpapers";
 			productReference = 6041665D16C0A3D600CFBD2F /* Space Wallpapers.app */;
 			productType = "com.apple.product-type.application";
@@ -214,7 +254,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6041665C16C0A3D600CFBD2F /* Space Wallpapers */,
+				6041665C16C0A3D600CFBD2F /* Wallpapers */,
 				6041667C16C0A3D600CFBD2F /* Space WallpapersTests */,
 			);
 		};
@@ -242,6 +282,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4E4FAF22B5544685801C3441 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 		6041667B16C0A3D600CFBD2F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,6 +318,11 @@
 			files = (
 				6041666D16C0A3D600CFBD2F /* main.m in Sources */,
 				6041667416C0A3D600CFBD2F /* ORAppDelegate.m in Sources */,
+				6041669616C0A52700CFBD2F /* ORRedditImageController.m in Sources */,
+				6041669C16C0A67800CFBD2F /* ORAppViewController.m in Sources */,
+				6041669F16C0A6AF00CFBD2F /* Image.m in Sources */,
+				6034B1501747C57400F8D569 /* ORRedditSources.m in Sources */,
+				6034B1531747CEE000F8D569 /* NSString+StringBetweenStrings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +339,7 @@
 /* Begin PBXTargetDependency section */
 		6041668216C0A3D600CFBD2F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6041665C16C0A3D600CFBD2F /* Space Wallpapers */;
+			target = 6041665C16C0A3D600CFBD2F /* Wallpapers */;
 			targetProxy = 6041668116C0A3D600CFBD2F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -382,11 +441,13 @@
 		};
 		6041668F16C0A3D600CFBD2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 262341C4A1244E268EEA7A67 /* Pods.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Space Wallpapers/Space Wallpapers-Prefix.pch";
 				INFOPLIST_FILE = "Space Wallpapers/Space Wallpapers-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,11 +455,13 @@
 		};
 		6041669016C0A3D600CFBD2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 262341C4A1244E268EEA7A67 /* Pods.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Space Wallpapers/Space Wallpapers-Prefix.pch";
 				INFOPLIST_FILE = "Space Wallpapers/Space Wallpapers-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -446,13 +509,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6041668E16C0A3D600CFBD2F /* Build configuration list for PBXNativeTarget "Space Wallpapers" */ = {
+		6041668E16C0A3D600CFBD2F /* Build configuration list for PBXNativeTarget "Wallpapers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6041668F16C0A3D600CFBD2F /* Debug */,
 				6041669016C0A3D600CFBD2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6041669116C0A3D600CFBD2F /* Build configuration list for PBXNativeTarget "Space WallpapersTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +525,7 @@
 				6041669316C0A3D600CFBD2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
