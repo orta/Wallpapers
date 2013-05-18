@@ -18,7 +18,6 @@
       @"Wallpapers": @"wallpapers",
       @"Wallpaper": @"wallpaper",
       @"NSFW (18+)": @"NSFW_Wallpapers",
-      @"Movies":@"moviewallpapers",
       @"Minimal": @"MinimalWallpaper",
       @"Minimal Art": @"minimalist_art",
       @"Street Art": @"StreetArtPorn",

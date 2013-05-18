@@ -8,7 +8,6 @@
 
 #import "ORAppViewController.h"
 #import "ORRedditImageController.h"
-#import "ORAPODImageController.h"
 #import "AFImageRequestOperation.h"
 #import "ORAppDelegate.h"
 
@@ -17,7 +16,8 @@
     NSString *_gifPath;
 
     ORRedditImageController *_redditController;
-    ORAPODImageController *_apodController;
+    NSString *_currentAddress;
+
     NSClipView *_imageClipView;
     AFImageRequestOperation *_imageDownloadOperation;
 }
@@ -25,10 +25,8 @@
 - (void)awakeFromNib {
     _redditController = [[ORRedditImageController alloc] init];
     _redditController.gifController = self;
+    [_redditController setRedditURL:_currentAddress];
     _currentSource = _redditController;
-    
-    _apodController = [[ORAPODImageController alloc] init];
-
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(myTableClipBoundsChanged:)
                                                  name:NSViewBoundsDidChangeNotification object:[_imageBrowser superview]];
@@ -36,6 +34,7 @@
 
 - (void)setRedditAddress:(NSString *)address {
     [_redditController setRedditURL:address];
+    _currentAddress = address;
     [_imageBrowser reloadData];
 }
 

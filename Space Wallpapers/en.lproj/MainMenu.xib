@@ -1301,7 +1301,7 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{335, 390}, {803, 636}}</string>
+				<string key="NSWindowRect">{{324, 178}, {803, 636}}</string>
 				<int key="NSWTFlags">1954021376</int>
 				<string key="NSWindowTitle">Wallpapers</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -1492,7 +1492,7 @@
 												<string>NeXT Encapsulated PostScript v1.2 pasteboard type</string>
 												<string>NeXT TIFF v4.0 pasteboard type</string>
 											</set>
-											<string key="NSFrameSize">{788, 584}</string>
+											<string key="NSFrameSize">{787, 583}</string>
 											<reference key="NSSuperview" ref="210376196"/>
 											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="752410749"/>
@@ -1513,7 +1513,7 @@
 											<reference key="delegate"/>
 										</object>
 									</array>
-									<string key="NSFrame">{{1, 1}, {788, 584}}</string>
+									<string key="NSFrame">{{1, 1}, {787, 583}}</string>
 									<reference key="NSSuperview" ref="429940006"/>
 									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="574669651"/>
@@ -1533,7 +1533,7 @@
 								<object class="NSScroller" id="752410749">
 									<reference key="NSNextResponder" ref="429940006"/>
 									<int key="NSvFlags">256</int>
-									<string key="NSFrame">{{789, 1}, {15, 584}}</string>
+									<string key="NSFrame">{{788, 1}, {15, 583}}</string>
 									<reference key="NSSuperview" ref="429940006"/>
 									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="408845426"/>
@@ -1547,7 +1547,7 @@
 								<object class="NSScroller" id="408845426">
 									<reference key="NSNextResponder" ref="429940006"/>
 									<int key="NSvFlags">256</int>
-									<string key="NSFrame">{{1, 585}, {788, 15}}</string>
+									<string key="NSFrame">{{1, 584}, {787, 15}}</string>
 									<reference key="NSSuperview" ref="429940006"/>
 									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="370569536"/>
@@ -1559,7 +1559,7 @@
 									<double key="NSPercent">0.50602412223815918</double>
 								</object>
 							</array>
-							<string key="NSFrame">{{-1, 36}, {805, 601}}</string>
+							<string key="NSFrame">{{0, 37}, {804, 600}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="210376196"/>
@@ -1652,7 +1652,6 @@
 							<string key="NSFrame">{{654, 1}, {145, 32}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="730896779">
@@ -3627,6 +3626,8 @@
 				<string key="350.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="351.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="354.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<boolean value="YES" key="371.IBNSWindowAutoPositionCentersHorizontal"/>
+				<boolean value="YES" key="371.IBNSWindowAutoPositionCentersVertical"/>
 				<string key="371.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="371.IBWindowTemplateEditedContentRect">{{380, 496}, {480, 360}}</string>
 				<integer value="1" key="371.NSWindowTemplate.visibleAtLaunch"/>
