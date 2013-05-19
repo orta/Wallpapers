@@ -14,6 +14,15 @@ static ORAppDelegate *_sharedInstance = nil;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     _sharedInstance = self;
+    _hideWindowButton.delegate = self;
+}
+
+- (void)buttonMouseDown {
+    [_window.animator setAlphaValue:0.1];
+}
+
+- (void)buttonMouseUp {
+    [_window.animator setAlphaValue:1];
 }
 
 + (void)setNetworkActivity:(BOOL)activity {

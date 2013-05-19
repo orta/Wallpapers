@@ -7,11 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ORUpAndDownButton.h"
 
-@interface ORAppDelegate : NSObject <NSApplicationDelegate>
+@interface ORAppDelegate : NSObject <NSApplicationDelegate, ButtonDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 @property (unsafe_unretained) IBOutlet NSProgressIndicator *networkProgress;
+@property (unsafe_unretained) IBOutlet ORUpAndDownButton *hideWindowButton;
 
 + (void)setNetworkActivity:(BOOL)activity;
 
