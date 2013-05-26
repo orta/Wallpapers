@@ -18,7 +18,8 @@ static ORAppDelegate *_sharedInstance = nil;
 }
 
 - (void)buttonMouseDown {
-    [_window.animator setAlphaValue:0.1];
+    [_window.animator setAlphaValue:0.05];
+    [[NSWorkspace sharedWorkspace] hideOtherApplications];
 }
 
 - (void)buttonMouseUp {

@@ -18,6 +18,7 @@
       @"Wallpapers": @"wallpapers",
       @"Wallpaper": @"wallpaper",
       @"NSFW (18+)": @"NSFW_Wallpapers",
+      @"No Context": @"nocontext_wallpapers",
       @"Minimal": @"MinimalWallpaper",
       @"Minimal Art": @"minimalist_art",
       @"Street Art": @"StreetArtPorn",
@@ -28,6 +29,7 @@
       @"Fire": @"FirePorn",
       @"Earth": @"EarthPorn",
       @"Cities": @"CityPorn",
+      @"Anime": @"animewallpaper",
       @"Animals": @"AnimalPorn",
       @"Abandoned": @"AbandonedPorn"
     };
