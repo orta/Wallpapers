@@ -7,9 +7,9 @@
 //
 
 #import "ORRedditImageController.h"
-#import "AFNetworking.h"
 #import "Image.h"
 #import "ORAppDelegate.h"
+#import <AFNetworking/AFNetworking.h>
 
 @implementation ORRedditImageController {
     NSString *_url;

@@ -42,6 +42,8 @@
 - (IBAction)sourceSelectionChanged:(id)sender {
     NSMenuItem *item = _sourcePopupButton.selectedItem;
     NSString *title = item.title;
+    [ARAnalytics event:@"Changed Group" withProperties:@{ @"name": title }];
+
     NSString *redditAddress = [NSString stringWithFormat:@"http://www.reddit.com/r/%@.json", _sources[title]];
     [_appViewController setRedditAddress:redditAddress];
 }

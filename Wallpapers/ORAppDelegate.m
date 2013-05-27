@@ -15,11 +15,13 @@ static ORAppDelegate *_sharedInstance = nil;
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     _sharedInstance = self;
     _hideWindowButton.delegate = self;
+    [ARAnalytics setupMixpanelWithToken:@"d0ac061332bb5978e0b8588c9c0ad78d"];
 }
 
 - (void)buttonMouseDown {
     [_window.animator setAlphaValue:0.05];
     [[NSWorkspace sharedWorkspace] hideOtherApplications];
+    [ARAnalytics event:@"Made Transparent"];
 }
 
 - (void)buttonMouseUp {

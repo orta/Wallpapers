@@ -11,6 +11,7 @@
 #import "AFImageRequestOperation.h"
 #import "ORAppDelegate.h"
 
+
 @implementation ORAppViewController {
     NSObject<ORGIFSource> *_currentSource;
     NSString *_gifPath;
@@ -88,6 +89,8 @@
     NSInteger index = [[aBrowser selectionIndexes] lastIndex];
 
     if(index != NSNotFound) {
+        [ARAnalytics event:@"Selected a wallpaper"];
+
         Image *gif = [_currentSource gifAtIndex:index];
         _currentGIF = gif;
 

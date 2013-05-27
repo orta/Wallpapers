@@ -352,6 +352,7 @@
 /* Begin XCBuildConfiguration section */
 		6041668C16C0A3D600CFBD2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 262341C4A1244E268EEA7A67 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -439,6 +440,7 @@
 		};
 		6041669216C0A3D600CFBD2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 262341C4A1244E268EEA7A67 /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Space Wallpapers.app/Contents/MacOS/Space Wallpapers";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -454,6 +456,7 @@
 		};
 		6041669316C0A3D600CFBD2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 262341C4A1244E268EEA7A67 /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Space Wallpapers.app/Contents/MacOS/Space Wallpapers";
 				COMBINE_HIDPI_IMAGES = YES;
