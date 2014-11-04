@@ -1,28 +1,21 @@
 PODS:
   - AFNetworking (1.2.1)
-  - ARAnalytics/Core (1.5)
-  - ARAnalytics/MixpanelOSX (1.5):
-    - ARAnalytics/Core
+  - ARAnalytics/CoreMac (2.8.0)
+  - ARAnalytics/MixpanelOSX (2.8.0):
+    - ARAnalytics/CoreMac
     - Mixpanel-OSX-Community
   - INAppStoreWindow (1.2)
   - Mixpanel-OSX-Community (2.0.0)
 
 DEPENDENCIES:
   - AFNetworking
-  - ARAnalytics/MixpanelOSX (from `../../ios/ARAnalytics/`)
+  - ARAnalytics/MixpanelOSX
   - INAppStoreWindow
-  - Mixpanel-OSX-Community (from `../../ios/Mixpanel-OSX-Community`)
-
-EXTERNAL SOURCES:
-  ARAnalytics:
-    :path: ../../ios/ARAnalytics/
-  Mixpanel-OSX-Community:
-    :path: ../../ios/Mixpanel-OSX-Community
 
 SPEC CHECKSUMS:
-  AFNetworking: a44069e3c9c89867544f6639482f155c7e5f9b41
-  ARAnalytics: c45556ff7b8fa612e39d7f85e9557128f6081fd6
-  INAppStoreWindow: d00327caee47d951043169df9aaab952389defcb
-  Mixpanel-OSX-Community: 4fbb698e87067e98a02569fd04a26ab82a9d77dc
+  AFNetworking: 7e82cfea05017c338ae62897f0a09ba1a8ebb479
+  ARAnalytics: 93c5b65989145f88f4d45e262612eac277b0c219
+  INAppStoreWindow: 73bf0535028e7f3994e223eed04abb97f695ec7e
+  Mixpanel-OSX-Community: ffb1d298c87f5691ff19a1d61e2bff6b154f3025
 
-COCOAPODS: 0.20.2
+COCOAPODS: 0.34.0

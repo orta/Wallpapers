@@ -28,6 +28,8 @@
     _redditController.gifController = self;
     [_redditController setRedditURL:_currentAddress];
     _currentSource = _redditController;
+    [_imageBrowser setValue:[NSColor clearColor] forKey:IKImageBrowserBackgroundColorKey];
+
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(myTableClipBoundsChanged:)
                                                  name:NSViewBoundsDidChangeNotification object:[_imageBrowser superview]];
@@ -48,18 +50,18 @@
     [self myTableClipBoundsChanged:nil];
 }
 
-- (void)myTableClipBoundsChanged:(NSNotification *)notification {
+- (void)myTableClipBoundsChanged:(NSNotification *)notification
+{
     NSClipView *clipView = [notification object];
-    if (!_imageClipView) {
-        _imageClipView = clipView;
-    }
+    NSRect newClipBounds = [clipView bounds];
+    CGFloat height = [(NSScrollView *)_imageBrowser.superview.superview contentSize].height;
+    CGFloat offset = CGRectGetMinY(newClipBounds);
+    if (offset == 0 ) return;
     
-    NSRect newClipBounds = [_imageClipView bounds];
-    CGFloat height = _imageScrollView.contentSize.height;
-
-    if(CGRectGetMinY(newClipBounds) + CGRectGetHeight(newClipBounds) < height + 20) {
+    if (offset < height + 20) {
         [_currentSource getNextGIFs];
     }
+
 }
 
 - (void)imageBrowser:(IKImageBrowserView *)aBrowser cellWasRightClickedAtIndex:(NSUInteger)index withEvent:(NSEvent *)event {

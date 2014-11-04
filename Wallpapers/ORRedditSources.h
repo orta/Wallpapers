@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "ORAppViewController.h"
+#import "ORSimpleSourceListView.h"
 
-@interface ORRedditSources : NSObject
+@interface ORRedditSources : NSObject <ORSourceListDataSource, ORSourceListDelegate>
 
 @property (unsafe_unretained) IBOutlet ORAppViewController *appViewController;
 @property (unsafe_unretained) IBOutlet NSPopUpButton *sourcePopupButton;
+@property (unsafe_unretained) IBOutlet ORSimpleSourceListView *sourceView;
+
 - (IBAction)sourceSelectionChanged:(id)sender;
 
 @end

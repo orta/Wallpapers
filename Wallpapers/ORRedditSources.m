@@ -17,7 +17,6 @@
     @{
       @"Wallpapers": @"wallpapers",
       @"Wallpaper": @"wallpaper",
-      @"NSFW (18+)": @"NSFW_Wallpapers",
       @"No Context": @"nocontext_wallpapers",
       @"Minimal": @"MinimalWallpaper",
       @"Minimal Art": @"minimalist_art",
@@ -36,15 +35,51 @@
 
     [_sourcePopupButton removeAllItems];
     [_sourcePopupButton addItemsWithTitles:_sources.allKeys];
-    [self sourceSelectionChanged:nil];
+    [_sourceView reloadData];
+
+    NSArray *keys = _sources.allValues;
+    NSString *randID = _sources[keys[arc4random_uniform((int)keys.count)]];
+
+    NSString *redditAddress = [NSString stringWithFormat:@"http://www.reddit.com/r/%@.json", randID];
+    [_appViewController setRedditAddress:redditAddress];
 }
 
-- (IBAction)sourceSelectionChanged:(id)sender {
-    NSMenuItem *item = _sourcePopupButton.selectedItem;
-    NSString *title = item.title;
+- (NSImage *)sourceList:(ORSimpleSourceListView *)sourceList imageForHeaderInSection:(NSUInteger)section {
+    return nil;
+}
+
+- (NSString *)sourceList:(ORSimpleSourceListView *)sourceList titleOfHeaderForSection:(NSUInteger)section {
+    return @"SOURCES";
+}
+
+- (ORSourceListItem *)sourceList:(ORSimpleSourceListView *)sourceList sourceListItemForIndexPath:(NSIndexPath *)indexPath {
+    ORSourceListItem *item = [[ORSourceListItem alloc] init];
+    item.title = _sources.allKeys[indexPath.row];
+    return item;
+}
+
+- (NSUInteger)sourceList:(ORSimpleSourceListView *)sourceList numberOfRowsInSection:(NSUInteger)section {
+    return _sources.allValues.count;
+}
+
+- (NSUInteger)numberOfSectionsInSourceList:(ORSimpleSourceListView *)sourceList {
+    return 1;
+}
+
+#pragma mark -
+#pragma mark ORSourceListDelegate
+
+- (void)sourceList:(ORSimpleSourceListView *)sourceList selectionDidChangeToIndexPath:(NSIndexPath *)indexPath {
+    NSUInteger index = indexPath.row;
+
+    NSString *title = _sources.allKeys[index];
     [ARAnalytics event:@"Changed Group" withProperties:@{ @"name": title }];
 
     NSString *redditAddress = [NSString stringWithFormat:@"http://www.reddit.com/r/%@.json", _sources[title]];
     [_appViewController setRedditAddress:redditAddress];
 }
+
+- (void)sourceList:(ORSimpleSourceListView *)sourceList didClickOnRightButtonForIndexPath:(NSIndexPath *)indexPath {}
+
+
 @end
