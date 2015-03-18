@@ -1,6 +1,6 @@
 //
 //  ORUpAndDownButton.m
-//  Space Wallpapers
+//  Wallpapers
 //
 //  Created by orta therox on 19/05/2013.
 //  Copyright (c) 2013 Art.sy Inc. All rights reserved.
