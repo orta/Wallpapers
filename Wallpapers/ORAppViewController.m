@@ -57,7 +57,7 @@
     CGFloat height = [(NSScrollView *)_imageBrowser.superview.superview contentSize].height;
     CGFloat offset = CGRectGetMinY(newClipBounds);
     if (offset == 0 ) return;
-    
+
     if (offset < height + 20) {
         [_currentSource getNextGIFs];
     }

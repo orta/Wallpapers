@@ -2,13 +2,13 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">101000</int>
-		<string key="IBDocument.SystemVersion">14A388a</string>
-		<string key="IBDocument.InterfaceBuilderVersion">6250</string>
-		<string key="IBDocument.AppKitVersion">1343.14</string>
-		<string key="IBDocument.HIToolboxVersion">755.00</string>
+		<string key="IBDocument.SystemVersion">14F6a</string>
+		<string key="IBDocument.InterfaceBuilderVersion">7531</string>
+		<string key="IBDocument.AppKitVersion">1348.17</string>
+		<string key="IBDocument.HIToolboxVersion">758.70</string>
 		<dictionary class="NSMutableDictionary" key="IBDocument.PluginVersions">
-			<string key="com.apple.InterfaceBuilder.CocoaPlugin">6250</string>
-			<string key="com.apple.imagekit.ibplugin">6250</string>
+			<string key="com.apple.InterfaceBuilder.CocoaPlugin">7531</string>
+			<string key="com.apple.imagekit.ibplugin">7531</string>
 		</dictionary>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IKImageBrowserView</string>
@@ -1373,7 +1373,7 @@
 																	<string key="NSFrameSize">{174, 621}</string>
 																	<reference key="NSSuperview" ref="1012655885"/>
 																	<reference key="NSWindow"/>
-																	<reference key="NSNextKeyView" ref="563334098"/>
+																	<reference key="NSNextKeyView" ref="249644262"/>
 																	<bool key="NSEnabled">YES</bool>
 																	<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 																	<bool key="NSControlAllowsExpansionToolTips">YES</bool>
@@ -1539,7 +1539,7 @@
 													<string key="NSFrameSize">{174, 638}</string>
 													<reference key="NSSuperview" ref="172161545"/>
 													<reference key="NSWindow"/>
-													<reference key="NSNextKeyView" ref="249644262"/>
+													<reference key="NSNextKeyView" ref="1012655885"/>
 													<int key="NSsFlags">133632</int>
 													<reference key="NSVScroller" ref="12564209"/>
 													<reference key="NSHScroller" ref="321181024"/>
@@ -1854,7 +1854,6 @@
 											<string key="NSFrame">{{605, 8}, {16, 16}}</string>
 											<reference key="NSSuperview" ref="864269770"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView"/>
 											<string key="NSReuseIdentifierKey">_NS:945</string>
 											<int key="NSpiFlags">28938</int>
 											<double key="NSMaxValue">100</double>
