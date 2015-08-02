@@ -361,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 94BCDEDC5EE5CDC342AFF96B /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wallpapers/Wallpapers-Prefix.pch";
@@ -374,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 23FEBBB3CE2DB4A80220765F /* Pods.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wallpapers/Wallpapers-Prefix.pch";
