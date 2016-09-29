@@ -201,7 +201,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = OR;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Art.sy Inc";
 			};
 			buildConfigurationList = 6041665816C0A3D600CFBD2F /* Build configuration list for PBXProject "Wallpapers" */;
