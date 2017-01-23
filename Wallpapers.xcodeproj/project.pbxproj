@@ -25,6 +25,8 @@
 		60EA73E71A088578009D0F0A /* ORSimpleSourceListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EA73E41A088578009D0F0A /* ORSimpleSourceListView.m */; };
 		60EA73E81A088578009D0F0A /* ORDarkBlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EA73E61A088578009D0F0A /* ORDarkBlueView.m */; };
 		60EA73EE1A0890A5009D0F0A /* ORTintedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EA73ED1A0890A5009D0F0A /* ORTintedView.m */; };
+		D4800C021E35FC1400E0074E /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = D4800C001E35FC1400E0074E /* AppIcon.icns */; };
+		D4800C031E35FC1400E0074E /* AppIcon.sketch in Resources */ = {isa = PBXBuildFile; fileRef = D4800C011E35FC1400E0074E /* AppIcon.sketch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,8 @@
 		60EA73EC1A0890A5009D0F0A /* ORTintedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORTintedView.h; sourceTree = "<group>"; };
 		60EA73ED1A0890A5009D0F0A /* ORTintedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTintedView.m; sourceTree = "<group>"; };
 		94BCDEDC5EE5CDC342AFF96B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D4800C001E35FC1400E0074E /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		D4800C011E35FC1400E0074E /* AppIcon.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppIcon.sketch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 		6041666716C0A3D600CFBD2F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D4800C001E35FC1400E0074E /* AppIcon.icns */,
+				D4800C011E35FC1400E0074E /* AppIcon.sketch */,
 				6041666816C0A3D600CFBD2F /* Wallpapers-Info.plist */,
 				6041666916C0A3D600CFBD2F /* InfoPlist.strings */,
 				6041666C16C0A3D600CFBD2F /* main.m */,
@@ -227,6 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6041666B16C0A3D600CFBD2F /* InfoPlist.strings in Resources */,
+				D4800C021E35FC1400E0074E /* AppIcon.icns in Resources */,
+				D4800C031E35FC1400E0074E /* AppIcon.sketch in Resources */,
 				6041667116C0A3D600CFBD2F /* Credits.rtf in Resources */,
 				6041667716C0A3D600CFBD2F /* MainMenu.xib in Resources */,
 			);
